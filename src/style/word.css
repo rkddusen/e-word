@@ -1,0 +1,27 @@
+.word-area{
+    margin-top: 50px;
+}
+.row{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+.tile{
+    width: 40px;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 0 2px;
+}
+
+.s-tile{
+    background-color: green;
+}
+.b-tile{
+    background-color: yellow;
+}
+.o-tile{
+    background-color: lightgray;
+}
