@@ -1,0 +1,25 @@
+.keyboard{
+    margin-top: 50px;
+}
+.key-row{
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.key-tile{
+    cursor: pointer;
+    height: 100%;
+    width: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 0 2px;
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.key-etc{
+    width: 60px;
+}
