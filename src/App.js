@@ -3,6 +3,7 @@ import WordArea from "./component/WordArea";
 import KeyBoard from "./component/KeyBoard";
 import NE from "./component/NE";
 import { useEffect, useState } from "react";
+import axios from "axios";
 
 function App() {
   const [word, setWord] = useState("");
@@ -13,6 +14,15 @@ function App() {
   const [ne, setNE] = useState(false);
 
   const [result, setResult] = useState(['BBBBB','OOOOO','SBOSB','BOSBO','SBSBS', 'SSSSS']);
+
+  const sendReq = async() => {
+    const res = await axios.get('http://localhost:3002/');
+    console.log(res.data);
+  };
+
+  useEffect(()=>{
+    sendReq();    
+  });
 
   return (
     <div className="App">
